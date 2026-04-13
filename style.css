@@ -1,0 +1,78 @@
+/* style.css */
+
+/* Body umum */
+body {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  text-align: center;
+  margin: 50px;
+}
+
+/* Font Nama Barang default (untuk desktop/laptop) */
+#searchSection label strong {
+  font-size: 3em; /* besar untuk desktop */
+  font-family: Arial, sans-serif; /* font laptop */
+}
+
+/* Kotak input & hasil */
+#search, #results, #details {
+  display: inline-block;
+  text-align: left;
+  max-width: 400px;
+  width: 80%;
+}
+
+/* Dropdown & harga */
+select {
+  margin-left: 10px;
+}
+
+/* Hover highlight */
+.result-item:hover {
+  background: #d0e0ff;
+}
+
+/* Kotak logo */
+#logoBox {
+  margin-top: 20px;
+  border: 2px solid #f1f4f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 90%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#logoBox img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsif untuk HP */
+@media (max-width: 768px) {
+  body {
+    margin: 20px;
+  }
+
+  /* Font Nama Barang lebih kecil dan font berbeda di HP */
+  #searchSection label strong {
+    font-size: 2em;   /* lebih kecil di HP */
+    font-family: "Brush Script MT", cursive; /* ganti font HP */
+  }
+
+  #search {
+    font-size: 1.5em;   /* input lebih besar */
+    padding: 10px;
+  }
+
+  #results, #details {
+    max-width: 90%;     
+    font-size: 1.2em;
+  }
+
+  select {
+    font-size: 1.2em;
+  }
+}
