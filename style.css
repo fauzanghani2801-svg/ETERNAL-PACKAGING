@@ -7,10 +7,10 @@ body {
   margin: 50px;
 }
 
-/* Font Nama Barang default (untuk desktop/laptop) */
+/* Font Nama Barang default (desktop/laptop) */
 #searchSection label strong {
-  font-size: 3em; /* besar untuk desktop */
-  font-family: Arial, sans-serif; /* font laptop */
+  font-size: 3em;
+  font-family: Arial, sans-serif;
 }
 
 /* Kotak input & hasil */
@@ -19,16 +19,26 @@ body {
   text-align: left;
   max-width: 400px;
   width: 80%;
+  font-family: Arial, sans-serif;
 }
 
 /* Dropdown & harga */
 select {
   margin-left: 10px;
+  font-family: Arial, sans-serif;
 }
 
 /* Hover highlight */
 .result-item:hover {
   background: #d0e0ff;
+}
+
+/* Samakan font hasil pencarian */
+.result-item,
+#details,
+#details strong,
+#details div {
+  font-family: Arial, sans-serif;
 }
 
 /* Kotak logo */
@@ -56,20 +66,30 @@ select {
     margin: 20px;
   }
 
-  /* Font Nama Barang lebih kecil dan font berbeda di HP */
+  /* Font Nama Barang di HP tetap sama */
   #searchSection label strong {
-    font-size: 2em;   /* lebih kecil di HP */
-    font-family: "Brush Script MT", cursive; /* ganti font HP */
+    font-size: 2em;
+    font-family: Arial, sans-serif;
   }
 
   #search {
-    font-size: 1.5em;   /* input lebih besar */
+    font-size: 1.5em;
     padding: 10px;
+    font-family: Arial, sans-serif;
   }
 
   #results, #details {
-    max-width: 90%;     
+    max-width: 90%;
     font-size: 1.2em;
+    font-family: Arial, sans-serif;
+  }
+
+  .result-item,
+  #details,
+  #details strong,
+  #details div,
+  select {
+    font-family: Arial, sans-serif;
   }
 
   select {
